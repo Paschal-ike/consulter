@@ -1,0 +1,154 @@
+{% load static %}
+<header class="header header-1 header-3">
+    <div class="top-header d-none d-xl-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="header-right-socail d-flex align-items-center">
+                        <h6 class="font-la color-white fw-normal">Follow On:</h6>
+
+                        <div class="social-profile">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="header-cta d-flex justify-content-end">
+                        <ul>
+                            <li><a><i class="icon-phone"></i> (+212)-226-3126</a></li>
+                            <li><a href="mailto:consulter@example.com"><i class="icon-email"></i>consulter@example.com</a></li>
+                            <li><a><i class="fal fa-clock"></i> Mon – Fri: 8.00 – 18.00</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-header-wraper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="header-logo">
+                            <div class="logo">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'img/logo/logo-3.png' %}" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="header-menu d-none d-xl-block">
+                            <div class="main-menu">
+                                <ul>
+                                    <li><a href="{% url 'index' %}">Home</a></li>
+                                    <li><a href="{% url 'services' %}">Our Services</a></li>
+                                    <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                    <li><a href="{% url 'pricing_table' %}">Pricing Table</a></li>
+                                    <li><a href="{% url 'team' %}">Team</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-right d-flex align-items-center">
+                            <div class="header-search">
+                                <a class="search-toggle" data-selector=".header-search">
+                                    <span class="fas fa-search"></span>
+                                </a>
+
+                                <form class="search-box" action="{% url 'search' %}" method="get">
+                                    <div class="form-group d-flex align-items-center">
+                                        <input type="search" name="q" value="" class="search-input" id="search" placeholder="Search">
+                                        <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="header-btn">Get A Quote <i class="far fa-chevron-double-right"></i></a>
+                            <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                                <div class="mobile-nav-wrap">                    
+                                    <div id="hamburger">
+                                        <i class="fal fa-bars"></i>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav">
+    <button type="button" class="close-nav">
+        <i class="fal fa-times-circle"></i>
+    </button>
+
+    <nav class="sidebar-nav">
+        <div class="navigation">
+            <div class="consulter-mobile-nav"> 
+                <ul>
+                    <li>
+                        <a href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'services' %}">Our Services</a>
+                    </li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'pricing_table' %}">Pricing Table</a></li>
+                    <li><a href="{% url 'team' %}">Team</a></li>
+                    <li>
+                        <a href="{% url 'portfolio' %}">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog' %}">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-nav__bottom mt-20">
+                <div class="sidebar-nav__bottom-contact-infos mb-20">
+                    <h6 class="color-black mb-5">Contact Info</h6>
+                    <ul>
+                        <li><a><i class="fal fa-clock"></i> Mon – Fri: 8.00 – 18.00</a></li>
+                        <li><a href="mailto:consulter@example.com"><i class="icon-email"></i>consulter@example.com</a></li>
+                        <li>
+                            <a class="header-contact d-flex align-items-center">
+                                <div class="icon">
+                                    <i class="icon-call"></i>
+                                </div>
+                                <div class="text">
+                                    <span class="font-la mb-5 d-block fw-500">Contact For Support</span>
+                                    <h5 class="fw-500">+123 556 8824</h5>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-nav__bottom-social">
+                    <h6 class="color-black mb-5">Follow On:</h6>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </nav>
+</div>    
+<div class="offcanvas-overlay"></div> <!-- offcanvas-overlay -->
+

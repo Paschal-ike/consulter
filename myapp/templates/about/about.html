@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CONSULTER - Business Consulting HTML Template{% endblock %}
+
+{% block content %}
+{% include 'services/header.html' %}
+{% include 'about/banner.html' %}
+{% include 'about/knowcompany.html' %}
+{% include 'partials/employee.html' %}
+{% include 'partials/companyskill.html' %}
+{% include 'partials/counterarea.html'%}
+{% include 'partials/teamstart.html' %}
+{% comment %} <div class="testimonial-bg" style="background-image: url({% static 'assets/img/about/testimonial-bg.png' %});"> {% endcomment %}
+{% include 'partials/testimonialstart.html' %}
+{% include 'partials/clientstart.html' %}
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<section class="search-results">
+    <div class="container">
+        <h1>Search Results for "{{ query }}"</h1>
+        <h2>Services</h2>
+        {% if services %}
+            <ul>
+                {% for service in services %}
+                    <li><a href="{% url 'service_detail' service.pk %}">{{ service.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No services found.</p>
+        {% endif %}
+
+        <h2>Portfolios</h2>
+        {% if portfolios %}
+            <ul>
+                {% for portfolio in portfolios %}
+                    <li><a href="{% url 'portfolio_detail' portfolio.pk %}">{{ portfolio.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No portfolios found.</p>
+        {% endif %}
+
+        <h2>Team Members</h2>
+        {% if team_members %}
+            <ul>
+                {% for team_member in team_members %}
+                    <li><a href="{% url 'team_detail' team_member.pk %}">{{ team_member.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No team members found.</p>
+        {% endif %}
+
+        <h2>Blog Posts</h2>
+        {% if blog_posts %}
+            <ul>
+                {% for blog_post in blog_posts %}
+                    <li><a href="{% url 'blog_detail' blog_post.pk %}">{{ blog_post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No blog posts found.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

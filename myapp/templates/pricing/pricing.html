@@ -1,0 +1,156 @@
+{% load static %}
+
+<!-- pricing start -->
+<section class="pricing pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-110 overflow-hidden" style="background-image: url({% static 'assets/img/price/testimonial-bg.svg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="pricing__content mb-40 mb-xs-30 text-center">
+                    <h2 class="title color-d_black mb-25 mb-sm-20 mb-xs-15 text-capitalize">Pick a plan that fits your needs</h2>
+
+                    <div class="description fw-500">
+                        <p><span>Save Over 25%</span> When You Select Annual Packs</p>
+                    </div>
+
+                    <div class="pricing__controller d-flex flex-wrap mt-60 mt-md-50 mt-sm-40 mt-xs-30">  
+                        <button class="theme-btn active" id="monthly-btn">Monthly Plan</button>
+                        <button class="theme-btn" id="yearly-btn">Yearly Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-item-wraper">
+            <div class="row mb-minus-30" id="monthly">
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Basic Plan</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$29.00 <span>/Monthly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="icon-close-3"></i> Digital Business Solutions</li>
+                                <li><i class="icon-close-3"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden standard-plan">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Standard Plan</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$49.00 <span>/Monthly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="fal fa-check-square"></i> Digital Business Solutions</li>
+                                <li><i class="icon-close-3"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden professional">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Professional</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$99.00 <span>/Monthly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="fal fa-check-square"></i> Digital Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+            </div>
+
+            <div class="row mb-minus-30 hide" id="yearly">
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Basic Plan</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$50.00 <span>/Yearly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="icon-close-3"></i> Digital Business Solutions</li>
+                                <li><i class="icon-close-3"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden standard-plan">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Standard Plan</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$99.00 <span>/Yearly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="fal fa-check-square"></i> Digital Business Solutions</li>
+                                <li><i class="icon-close-3"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="pricing__card d-flex flex-column justify-content-between mb-30 overflow-hidden professional">
+                        <div class="pricing__card-header">
+                            <h3 class="title color-d_black">Professional</h3>
+                            <h6 class="sub-title font-la fw-600 text-uppercase mb-30 mb-sm-25 mb-xs-15">Start package <img src="{% static 'assets/img/icon/hand-3.svg' %}" class="img-fluid" alt=""></h6>
+                            <div class="price color-white mb-30 mb-sm-25 mb-xs-15 overflow-hidden">$999.00 <span>/Yearly</span></div>
+                            <p>Plan for businesses with basic IT requirements</p>
+                        </div>
+                        <div class="pricing__card-body">
+                            <ul> 
+                                <li><i class="fal fa-check-square"></i> Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Market Growth Solutions</li>
+                                <li><i class="fal fa-check-square"></i> Security Management</li>
+                                <li><i class="fal fa-check-square"></i> Digital Business Solutions</li>
+                                <li><i class="fal fa-check-square"></i> 24/7 System Monitoring</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="theme-btn mt-40 mt-md-35">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /pricing__card -->
+            </div>
+        </div> 
+    </div>
+</section>
+<!-- pricing end -->

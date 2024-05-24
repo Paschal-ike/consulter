@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CONSULTER - Business Consulting HTML Template{% endblock %}
+
+
+{% block content %}
+{% include 'partials/_header.html' %}
+<div class="header-gutter home"></div>
+{% include 'index/pagebanner.html' %}
+{% include 'partials/employee.html' %}
+{% include 'partials/companyskill.html' %}
+{% include 'partials/counterarea.html'%}
+{% include 'index/blognews.html' %}
+{% include 'partials/teamstart.html' %}
+{% include 'partials/testimonialstart.html' %}
+{% include 'partials/clientstart.html' %}
+{% include 'index/delivery.html' %}
+{% include 'index/sectionsindex.html' %}
+{% include 'index/blogstart.html' %}
+
+
+{% endblock %}
